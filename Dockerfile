@@ -16,5 +16,7 @@ RUN apt-get -y install libxslt1-dev
 RUN pip install requests pyquery pymongo
 
 RUN mkdir ipynbs && mkdir data
+ENV WORK_ON /ipynbs
+
 VOLUME ["/ipynbs", "/data"]
 
